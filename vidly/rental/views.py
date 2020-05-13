@@ -11,6 +11,8 @@ def index(request):
     return render(request,'index.html', { 'title': 'Movies Catalog', 'movies': all_movies })
     #return HttpResponse("Hello World!!!")
 
+def catalog(request):
+    return render(request, 'catalog.html')
 
 #about send your name
 def about(request):

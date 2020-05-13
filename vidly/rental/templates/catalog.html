@@ -1,0 +1,35 @@
+{% extends 'layout.html'%}
+
+{% block content %}
+
+<h2>The Movies Calatlog (dynamic)</h2>
+
+<div class="catalog">
+<table class="table table-bordered table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Price</th>
+            <th>Stock</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+       
+
+    </tbody>
+
+</table>
+
+
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+{% load static %}
+<script src="{% static 'scripts/catalog.js' %}"></script>
+{% endblock %}
