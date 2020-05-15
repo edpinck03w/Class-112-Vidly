@@ -4,6 +4,16 @@ from rental.models import Movie, Genre
 from tastypie.authorization import Authorization
 
 # Create your models here.
+#ORM (Object Relation Mapping)
+
+# python manage.py makemigrations 
+# python manage.py migrate
+
+# Admin 
+# python manage.py createsuperuser
+
+
+
 class MovieResource(ModelResource):
     class Meta:
         queryset = Movie.objects.all()

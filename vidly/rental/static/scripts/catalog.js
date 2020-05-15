@@ -23,8 +23,8 @@ function loadData(){
 function displayMovie(movie){
     var tr =
     `<tr>
-    <td><img src='${movie.image}'></td>
-    <td>${movie.title}</td>
+    <td><img src='/static/images/${movie.image}'></td>
+    <td><a href="/movie/${movie.id}" >${movie.title}</a></td>
     <td>${movie.release_year}</td>
     <td>${movie.price}</td>
     <td>${movie.in_stock}</td>
