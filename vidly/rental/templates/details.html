@@ -6,35 +6,33 @@
 <link href="/static/styles/details.css" rel="stylesheet">
 {% endblock %}
 
-
-<h2>{{ movie.title }}</h2>
-
-<div class="image">
-<img src="/static/images/{{ movie.image }}">
+<div class="space">
+<div class="card mb-3 text-center" style="max-width: 1000px;">
+    <div class="card-header text-white bg-primary">Header</div>
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="/static/images/{{ movie.image }}" class="card-img">
+      </div>
+      <div class="col-md-8">  
+        <div class="card-body text-center">
+          <h5 class="card-title">{{ movie.title }}</h5>
+          <p class="card-text">Release Year: {{ movie.release_year }}</p>
+          <p class="card-text">Price: {{ movie.price }}</p>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem aut eum at labore excepturi, alias velit qui tempore placeat distinctio, perferendis molestias voluptate nihil!</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      
+        </div>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><button class="btn btn-sm btn-info btn-block">Add to cart</button></li>
+        <li class="list-group-item"><button class="btn btn-sm btn-danger btn-block">Watch on Netflix</button></li>
+        <li class="list-group-item"><button class="btn btn-sm btn-success btn-block">Watch on Hulu</button></li>
+        <li class="list-group-item"><button class="btn btn-sm btn-primary btn-block">Watch on iTunes</button></li>
+      </ul>
+</div>
 </div>
 
-
-<div class="details">
-    Release Year: {{ movie.release_year }}
-    Price: {{ movie.price }}
-
-
-</div>
-
-
-<div class="actions">
-<button class="btn btn-sm btn-info">Add to cart</button>
-<button class="btn btn-sm btn-danger">Watch on Netflix</button>
-<button class="btn btn-sm btn-success">Watch on Hulu</button>
-<button class="btn btn-sm btn-light">Watch on iTunes</button>
-</div>
-
-
-
-<div class="synopsis">
-    <h6>Synopsis</h6>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nesciunt libero laboriosam error dolorem, fuga facere iusto pariatur, sapiente sed ex quibusdam sit sunt earum vitae saepe magnam quae, quidem provident distinctio illo nam labore.</p>
-</div>
 
 
 
